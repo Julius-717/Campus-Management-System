@@ -55,3 +55,13 @@ def menu():
     Label_3.grid(row = 0, column = 0, padx = 60, pady = 5)
     Label_4 = Label(Frame_4, text = 'MARKSHEET', font = ('arial',25,'bold'), bg = 'navajo white')
     Label_4.grid(row = 0, column = 0, padx = 101, pady = 5)
+
+    # Buttons
+    Button_1 = Button(Frame_1, text = 'VIEW', font = ('arial',16,'bold'), width = 8, command = __information__)
+    Button_1.grid(row = 0, column = 3, padx = 50)
+    Button_2 = Button(Frame_2, text = 'VIEW', font = ('arial',16,'bold'), width = 8, command = __FeeReport__)
+    Button_2.grid(row = 0, column = 3, padx = 50)
+    Button_3 = Button(Frame_3, text = 'VIEW', font = ('arial',16,'bold'), width = 8, command = __Library__)
+    Button_3.grid(row = 0, column = 3, padx = 50)
+    Button_4 = Button(Frame_4, text = 'VIEW', font = ('arial',16,'bold'), width = 8, command = __marksheet__)
+    Button_4.grid(row = 0, column = 3, padx = 50)
