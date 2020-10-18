@@ -90,3 +90,10 @@ class Std_info():
                 self.listbox.delete(0, END)
                 for row in Std_info_Backend.search(self.name.get(), self.fname.get(), self.surname.get(), self.address.get(), self.mobno.get(), self.email.get(), self.dob.get(), self.gender.get()):
                     self.listbox.insert(END, row, str(''))
+
+            def Update():
+                if(len(self.name.get()) != 0):
+                    Std_info_Backend.delete(selected_tuple[0])
+                if(len(self.name.get()) != 0):
+                    Std_info_Backend.insert(self.name.get(), self.fname.get(), self.surname.get(), self.address.get(), self.mobno.get(), self.email.get(), self.dob.get(), \
+                        self.gender.get())
