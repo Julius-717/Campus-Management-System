@@ -45,3 +45,13 @@ def menu():
     Frame_3.grid(row = 3, column = 0, pady = 7)
     Frame_4 = LabelFrame(root, font = ('arial',17,'bold'), width = 1000, height = 100, bg = 'navajo white', relief = 'ridge', bd = 10)
     Frame_4.grid(row = 4, column = 0, pady = 7)
+
+    # Labels
+    Label_1 = Label(Frame_1, text = 'STUDENT PROFILE', font = ('arial',25,'bold'), bg = 'navajo white')
+    Label_1.grid(row = 0, column = 0, padx = 50, pady = 5)
+    Label_2 = Label(Frame_2, text = 'FEE REPORT', font = ('arial',25,'bold'), bg = 'navajo white')
+    Label_2.grid(row = 0, column = 0, padx = 100, pady = 5)
+    Label_3 = Label(Frame_3, text = 'LIBRARY SYSTEM', font = ('arial',25,'bold'), bg = 'navajo white')
+    Label_3.grid(row = 0, column = 0, padx = 60, pady = 5)
+    Label_4 = Label(Frame_4, text = 'MARKSHEET', font = ('arial',25,'bold'), bg = 'navajo white')
+    Label_4.grid(row = 0, column = 0, padx = 101, pady = 5)
