@@ -11,3 +11,13 @@ def connect():
 
     conn.commit()
     conn.close()
+
+def insert(name = " ", fname = " ", mname = " ", address = " ", mobno = " ", email = " ", dob = " ", gender = " "):
+    conn = sqlite3.connect("student.db")
+    cur = conn.cursor()
+
+    cur.execute("INSERT INTO student VALUES (NULL,?,?,?,?,?,?,?,?)", (name, fname, mname, address , mobno, email, dob, gender))
+
+    conn.commit()
+    conn.close()
+
