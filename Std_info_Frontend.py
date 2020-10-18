@@ -154,3 +154,19 @@ class Std_info():
             self.Entry_gender = ttk.Combobox(self.Frame_1, values = (' ','Male','Female','Others'),\
                 font = ('arial',17,'bold'), textvariable = self.gender, width = 19)
             self.Entry_gender.grid(row = 7, column = 1, padx = 10, pady = 5)
+
+            # Buttons of Frame 3
+            self.btnSave = Button(self.Frame_3, text = 'SAVE', font = ('arial',17,'bold'), width = 8, command = Add)
+            self.btnSave.grid(row = 0, column = 0, padx = 10, pady = 10)
+            self.btnDisplay = Button(self.Frame_3, text = 'DISPLAY', font = ('arial',17,'bold'), width = 8, command = Display)
+            self.btnDisplay.grid(row = 0, column = 1, padx = 10, pady = 10)
+            self.btnReset = Button(self.Frame_3, text = 'RESET', font = ('arial',17,'bold'), width = 8, command = Reset)
+            self.btnReset.grid(row = 0, column = 2, padx = 10, pady = 10)
+            self.btnUpdate = Button(self.Frame_3, text = 'UPDATE', font = ('arial',17,'bold'), width = 8, command = Update)
+            self.btnUpdate.grid(row = 0, column = 3, padx = 10, pady = 10)
+            self.btnDelete = Button(self.Frame_3, text = 'DELETE', font = ('arial',17,'bold'), width = 8, command = Delete)
+            self.btnDelete.grid(row = 0, column = 4, padx = 10, pady = 10)
+            self.btnSearch = Button(self.Frame_3, text = 'SEARCH', font = ('arial',17,'bold'), width = 8, command = Search )
+            self.btnSearch.grid(row = 0, column = 5, padx = 10, pady = 10)
+            self.btnExit = Button(self.Frame_3, text = 'EXIT', font = ('arial',17,'bold'), width = 8, command = Exit)
+            self.btnExit.grid(row = 0, column = 6, padx = 10, pady = 10)
