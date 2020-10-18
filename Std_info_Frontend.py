@@ -12,3 +12,7 @@ class Std_info():
         self.root.title('Student Information')
         self.root.geometry('1350x750')
         self.root.config(bg = 'navajowhite')
+
+        def Information():
+            # Variables
+            self.name = StringVar()
