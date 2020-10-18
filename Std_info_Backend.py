@@ -39,3 +39,15 @@ def delete(id):
 
     conn.commit()
     conn.close()
+
+def update(id, name = " ", fname = " ", mname = " ", address = " ", mobno = " ", email = " ", dob = " ", gender = " "):
+    conn = sqlite3.connect("student.db")
+    cur = conn.cursor()
+
+    cur.execute("UPDATE student SET name = ? OR fname = ? OR mname = ? OR address = ? OR mobno = ? OR email = ? OR dob = ? OR gender = ?", \
+        (name, fname, mname, address , mobno, email, dob, gender))
+
+    conn.commit()
+    conn.close()
+
+def search(name = )
