@@ -8,4 +8,6 @@ import tkinter.messagebox
 import os
 
 class Window_1():
-    
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Search Page")
