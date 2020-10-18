@@ -23,3 +23,8 @@ def __FeeReport__():
     filename = 'Fee_Frontend.py'
     os.system(filename)
     os.system('vscode'+filename)
+
+def menu():
+    root = Tk()
+    root.title('Menu')
+    root.geometry
