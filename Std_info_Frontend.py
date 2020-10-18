@@ -171,3 +171,12 @@ class Std_info():
             self.btnSearch.grid(row = 0, column = 5, padx = 10, pady = 10)
             self.btnExit = Button(self.Frame_3, text = 'EXIT', font = ('arial',17,'bold'), width = 8, command = Exit)
             self.btnExit.grid(row = 0, column = 6, padx = 10, pady = 10)
+
+            # Listbox and ScrollBar
+            self.scrollbar = Scrollbar(self.Frame_2)
+            self.scrollbar.grid(row = 0, column = 1, sticky = 'ns')
+
+            self.listbox = Listbox(self.Frame_2, width = 75, height = 20 , font = ('arial',12,'bold'))
+            self.listbox.bind('<<ListboxSelect>>', StudentRec)
+            self.listbox.grid(row = 0, column = 0)
+            self.scrollbar.config(command = self.listbox.yview)
