@@ -37,4 +37,9 @@ class Window_1():
             filename = 'Marksheet_Fronted.py'
             os.system(filename)
             os.system('vscode'+filename)
+
+        btnSearch = Button(frame, text = 'SEARCH', width = 15, font = ('arial',15,'bold'), command=Search)
+        btnSearch.grid(row = 1, column = 0, padx = 50)
+        btnNew = Button(frame, text = 'CREATE NEW', width = 15, font = ('arial',15,'bold'), command=new)
+        btnNew.grid(row = 1, column = 1, padx = 50, pady = 20 )
             
