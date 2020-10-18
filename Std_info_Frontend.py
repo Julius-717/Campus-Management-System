@@ -11,3 +11,4 @@ class Std_info():
         self.root = root
         self.root.title('Student Information')
         self.root.geometry('1350x750')
+        self.root.config(bg = 'navajowhite')
