@@ -10,3 +10,4 @@ class Std_info():
     def __init__(self, root):
         self.root = root
         self.root.title('Student Information')
+        self.root.geometry('1350x750')
