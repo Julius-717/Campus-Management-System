@@ -97,3 +97,6 @@ class Std_info():
                 if(len(self.name.get()) != 0):
                     Std_info_Backend.insert(self.name.get(), self.fname.get(), self.surname.get(), self.address.get(), self.mobno.get(), self.email.get(), self.dob.get(), \
                         self.gender.get())
+
+                    Std_info_Backend.insert(self.name.get(), self.fname.get(), self.surname.get(), self.address.get(), self.mobno.get(), self.email.get(), self.dob.get(), \
+                        self.gender.get())
