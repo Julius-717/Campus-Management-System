@@ -65,3 +65,8 @@ def menu():
     Button_3.grid(row = 0, column = 3, padx = 50)
     Button_4 = Button(Frame_4, text = 'VIEW', font = ('arial',16,'bold'), width = 8, command = __marksheet__)
     Button_4.grid(row = 0, column = 3, padx = 50)
+
+    root.mainloop()
+
+if __name__ == '__main__':
+    menu()
