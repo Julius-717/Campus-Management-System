@@ -16,3 +16,4 @@ class Std_info():
         def Information():
             # Variables
             self.name = StringVar()
+            self.fname = StringVar()
