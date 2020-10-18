@@ -58,3 +58,10 @@ class Std_info():
                     self.listbox.delete(0, END)
                     self.listbox.insert(END, (self.name.get(), self.fname.get(), self.surname.get(), self.address.get(), self.mobno.get(), self.email.get(), self.dob.get(), \
                         self.gender.get()))
+
+            def display():
+                self.listbox.delete(0, END)
+                for row in Std_info_Backend.view():
+                    self.listbox.insert(END, row, str(' '))
+
+                    
