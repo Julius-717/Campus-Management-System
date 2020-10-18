@@ -50,3 +50,11 @@ class Std_info():
                     self.Entry_gender.insert(END, selected_tuple[8])
                 except IndexError:
                     pass
+
+            def Add():
+                if(len(self.name.get()) != 0):
+                    Std_info_Backend.insert(self.name.get(), self.fname.get(), self.surname.get(), self.address.get(), self.mobno.get(), self.email.get(), self.dob.get(), \
+                        self.gender.get())
+                    self.listbox.delete(0, END)
+                    self.listbox.insert(END, (self.name.get(), self.fname.get(), self.surname.get(), self.address.get(), self.mobno.get(), self.email.get(), self.dob.get(), \
+                        self.gender.get()))
