@@ -69,3 +69,13 @@ class Std_info():
                 if Exit > 0:
                     self.master.destroy()
                     return 
+
+            def Reset():
+                self.name.set('')
+                self.fname.set('')
+                self.surname.set('')
+                self.address.set('')                        self.mobno.set('')
+                self.email.set('')
+                self.dob.set('')
+                self.gender.set('')
+                self.listbox.delete(0, END)
