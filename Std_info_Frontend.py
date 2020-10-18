@@ -135,3 +135,22 @@ class Std_info():
             self.Label_dob.grid(row = 6, column = 0, sticky = W, padx = 20)
             self.Label_gender = Label(self.Frame_1, text = 'Gender', font = ('arial',20,'bold'),  bg = 'navajowhite')
             self.Label_gender.grid(row = 7, column = 0, sticky = W, padx = 20, pady = 10)
+
+            # Frame 1 Entries
+            self.Entry_name = Entry(self.Frame_1, font = ('arial',17,'bold'), textvariable = self.name)
+            self.Entry_name.grid(row = 0, column = 1, padx = 10, pady = 5)
+            self.Entry_fname = Entry(self.Frame_1, font = ('arial',17,'bold'), textvariable = self.fname)
+            self.Entry_fname.grid(row = 1, column = 1, padx = 10, pady = 5)
+            self.Entry_surname = Entry(self.Frame_1, font = ('arial',17,'bold'), textvariable = self.surname)
+            self.Entry_surname.grid(row = 2, column = 1, padx = 10, pady = 5)
+            self.Entry_address = Entry(self.Frame_1, font = ('arial',17,'bold'), textvariable = self.address)
+            self.Entry_address.grid(row = 3, column = 1, padx = 10, pady = 5)
+            self.Entry_mobno = Entry(self.Frame_1, font = ('arial',17,'bold'), textvariable = self.mobno)
+            self.Entry_mobno.grid(row = 4, column = 1, padx = 10, pady = 5)
+            self.Entry_emailID = Entry(self.Frame_1, font = ('arial',17,'bold'), textvariable = self.email)
+            self.Entry_emailID.grid(row = 5, column = 1, padx = 10, pady = 5)
+            self.Entry_dob = Entry(self.Frame_1, font = ('arial',17,'bold'), textvariable = self.dob)
+            self.Entry_dob.grid(row = 6, column = 1, padx = 10, pady = 5)
+            self.Entry_gender = ttk.Combobox(self.Frame_1, values = (' ','Male','Female','Others'),\
+                font = ('arial',17,'bold'), textvariable = self.gender, width = 19)
+            self.Entry_gender.grid(row = 7, column = 1, padx = 10, pady = 5)
