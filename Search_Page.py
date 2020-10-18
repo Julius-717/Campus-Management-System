@@ -43,3 +43,7 @@ class Window_1():
         btnNew = Button(frame, text = 'CREATE NEW', width = 15, font = ('arial',15,'bold'), command=new)
         btnNew.grid(row = 1, column = 1, padx = 50, pady = 20 )
             
+root = Tk()
+root.title("Login Form")
+Window_1(root)
+root.mainloop()
