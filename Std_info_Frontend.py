@@ -180,3 +180,9 @@ class Std_info():
             self.listbox.bind('<<ListboxSelect>>', StudentRec)
             self.listbox.grid(row = 0, column = 0)
             self.scrollbar.config(command = self.listbox.yview)
+
+        Information()
+
+root = Tk()
+obj = Std_info(root)
+root.mainloop()
