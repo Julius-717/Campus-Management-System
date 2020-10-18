@@ -64,4 +64,8 @@ class Std_info():
                 for row in Std_info_Backend.view():
                     self.listbox.insert(END, row, str(' '))
 
-                    
+            def Exit():
+                Exit = tkinter.messagebox.askyesno("Login System", "Confirm if you want to Exit")
+                if Exit > 0:
+                    self.master.destroy()
+                    return 
