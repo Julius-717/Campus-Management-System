@@ -30,3 +30,12 @@ def view():
     return rows
 
     conn.close()
+
+def delete(id):
+    conn = sqlite3.connect("student.db")
+    cur = conn.cursor()
+
+    cur.execute("DELETE FROM student WHERE id = ?", (id,))
+
+    conn.commit()
+    conn.close()
