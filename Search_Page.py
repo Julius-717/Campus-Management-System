@@ -33,5 +33,8 @@ class Window_1():
                 tkinter.messagebox.askokcancel('Attention', 'Please enter valid Roll No.')
                 return
 
-        
+        def new():
+            filename = 'Marksheet_Fronted.py'
+            os.system(filename)
+            os.system('vscode'+filename)
             
