@@ -85,3 +85,8 @@ class Std_info():
                     Std_info_Backend.delete(selected_tuple[0])
                     Reset()
                     Display()
+
+            def Search():
+                self.listbox.delete(0, END)
+                for row in Std_info_Backend.search(self.name.get(), self.fname.get(), self.surname.get(), self.address.get(), self.mobno.get(), self.email.get(), self.dob.get(), self.gender.get()):
+                    self.listbox.insert(END, row, str(''))
