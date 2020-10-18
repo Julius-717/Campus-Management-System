@@ -27,4 +27,4 @@ def __FeeReport__():
 def menu():
     root = Tk()
     root.title('Menu')
-    root.geometry
+    root.geometry('1350x750')
