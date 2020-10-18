@@ -28,3 +28,4 @@ def menu():
     root = Tk()
     root.title('Menu')
     root.geometry('1350x750')
+    root.config(bg='navajo white')
