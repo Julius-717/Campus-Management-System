@@ -18,3 +18,4 @@ class Std_info():
             self.name = StringVar()
             self.fname = StringVar()
             self.surname = StringVar()
+            self.address = StringVar()
