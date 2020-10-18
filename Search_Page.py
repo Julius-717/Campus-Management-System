@@ -23,3 +23,15 @@ class Window_1():
 
         entry = Entry(frame, font = ('arial',25,'bold'), textvariable = self.roll)
         entry.grid(row = 0, column = 1, padx = 30, pady = 20)
+
+        def Search():
+            if(len(self.roll.get()) != 0):
+                row = Marksheet_Backend.search(int(self.roll.get()))
+                print(row)
+                Marksheet_Frontend.search_result_marksheet(row)
+            else:
+                tkinter.messagebox.askokcancel('Attention', 'Please enter valid Roll No.')
+                return
+
+        
+            
