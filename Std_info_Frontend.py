@@ -17,7 +17,7 @@ class Std_info():
             # Variables
             self.name = StringVar()
             self.fname = StringVar()
-            self.surname = StringVar()
+            self.mname = StringVar()
             self.address = StringVar()
             self.mobno = StringVar()
             self.email = StringVar()
@@ -36,8 +36,8 @@ class Std_info():
                     self.Entry_name.insert(END, selected_tuple[1])
                     self.Entry_fname.delete(0, END)
                     self.Entry_fname.insert(END, selected_tuple[2])
-                    self.Entry_surname.delete(0, END)
-                    self.Entry_surname.insert(END, selected_tuple[3])
+                    self.Entry_mname.delete(0, END)
+                    self.Entry_mname.insert(END, selected_tuple[3])
                     self.Entry_address.delete(0, END)
                     self.Entry_address.insert(END, selected_tuple[4])
                     self.Entry_mobno.delete(0, END)
@@ -53,10 +53,10 @@ class Std_info():
 
             def Add():
                 if(len(self.name.get()) != 0):
-                    Std_info_Backend.insert(self.name.get(), self.fname.get(), self.surname.get(), self.address.get(), self.mobno.get(), self.email.get(), self.dob.get(), \
+                    Std_info_Backend.insert(self.name.get(), self.fname.get(), self.mname.get(), self.address.get(), self.mobno.get(), self.email.get(), self.dob.get(), \
                         self.gender.get())
                     self.listbox.delete(0, END)
-                    self.listbox.insert(END, (self.name.get(), self.fname.get(), self.surname.get(), self.address.get(), self.mobno.get(), self.email.get(), self.dob.get(), \
+                    self.listbox.insert(END, (self.name.get(), self.fname.get(), self.mname.get(), self.address.get(), self.mobno.get(), self.email.get(), self.dob.get(), \
                         self.gender.get()))
 
             def display():
@@ -73,8 +73,9 @@ class Std_info():
             def Reset():
                 self.name.set('')
                 self.fname.set('')
-                self.surname.set('')
-                self.address.set('')                        self.mobno.set('')
+                self.mname.set('')
+                self.address.set('') 
+                self.mobno.set('')                       
                 self.email.set('')
                 self.dob.set('')
                 self.gender.set('')
@@ -88,21 +89,21 @@ class Std_info():
 
             def Search():
                 self.listbox.delete(0, END)
-                for row in Std_info_Backend.search(self.name.get(), self.fname.get(), self.surname.get(), self.address.get(), self.mobno.get(), self.email.get(), self.dob.get(), self.gender.get()):
+                for row in Std_info_Backend.search(self.name.get(), self.fname.get(), self.mname.get(), self.address.get(), self.mobno.get(), self.email.get(), self.dob.get(), self.gender.get()):
                     self.listbox.insert(END, row, str(''))
 
             def Update():
                 if(len(self.name.get()) != 0):
                     Std_info_Backend.delete(selected_tuple[0])
                 if(len(self.name.get()) != 0):
-                    Std_info_Backend.insert(self.name.get(), self.fname.get(), self.surname.get(), self.address.get(), self.mobno.get(), self.email.get(), self.dob.get(), \
+                    Std_info_Backend.insert(self.name.get(), self.fname.get(), self.mname.get(), self.address.get(), self.mobno.get(), self.email.get(), self.dob.get(), \
                         self.gender.get())
 
-                    Std_info_Backend.insert(self.name.get(), self.fname.get(), self.surname.get(), self.address.get(), self.mobno.get(), self.email.get(), self.dob.get(), \
+                    Std_info_Backend.insert(self.name.get(), self.fname.get(), self.mname.get(), self.address.get(), self.mobno.get(), self.email.get(), self.dob.get(), \
                         self.gender.get())
 
             # Frames
-            self.Main_Frame = LabelFrame(self.master, width = 1300, height = 500, font = ('arial',20,'bold'), \
+            self.Main_Frame = LabelFrame(self.root, width = 1300, height = 500, font = ('arial',20,'bold'), \
                                                   bg = 'navajowhite',bd = 15, relief = 'ridge')
             self.Main_Frame.grid(row = 0, column = 0, padx = 10, pady = 20)
 
@@ -114,7 +115,7 @@ class Std_info():
                 relief = 'ridge', bd = 10, bg = 'navajowhite', text = 'STUDENT DATABASE')
             self.Frame_2.grid(row = 1, column = 1, padx = 5)                  
     
-            self.Frame_3 = LabelFrame(self.master, width = 1200, height = 100, font = ('arial',10,'bold'), \
+            self.Frame_3 = LabelFrame(self.root, width = 1200, height = 100, font = ('arial',10,'bold'), \
                    bg = 'navajowhite', relief = 'ridge', bd = 13)
             self.Frame_3.grid(row = 2, column = 0, pady = 10)
 
