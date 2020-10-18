@@ -21,3 +21,12 @@ def insert(name = " ", fname = " ", mname = " ", address = " ", mobno = " ", ema
     conn.commit()
     conn.close()
 
+def view():
+    conn = sqlite3.connect("student.db")
+    cur = conn.cursor()
+
+    cur.execute("SELECT * FROM student")
+    rows = cur.fetchall()
+    return rows
+
+    conn.close()
