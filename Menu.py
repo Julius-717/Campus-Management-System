@@ -19,7 +19,7 @@ def __Information__():
     os.system(filename)
     os.system('vscode'+filename)
 
-def __Library__():
-    filename = 'Library_Frontend.py'
+def __FeeReport__():
+    filename = 'Fee_Frontend.py'
     os.system(filename)
     os.system('vscode'+filename)
