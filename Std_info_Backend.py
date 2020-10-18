@@ -50,4 +50,15 @@ def update(id, name = " ", fname = " ", mname = " ", address = " ", mobno = " ",
     conn.commit()
     conn.close()
 
-def search(name = )
+def search(name = " ", fname = " ", mname = " ", address = " ", mobno = " ", email = " ", dob = " ", gender = " "):
+    conn = sqlite3.connect("student.db")
+    cur = conn.cursor()
+
+    cur.execute("SELECT * FROM student WHERE name = ? OR fname = ? OR mname = ? OR address = ? OR mobno = ? OR email = ? OR dob = ? \
+        OR gender = ?", (name, fname, mname, address , mobno, email, dob, gender))
+    rows = cur.fetchall()
+    return rows
+
+    conn.close()
+
+connect()
