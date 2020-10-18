@@ -79,3 +79,9 @@ class Std_info():
                 self.dob.set('')
                 self.gender.set('')
                 self.listbox.delete(0, END)
+
+            def Delete():
+                if(len(self.name.get()) !=0):
+                    Std_info_Backend.delete(selected_tuple[0])
+                    Reset()
+                    Display()
