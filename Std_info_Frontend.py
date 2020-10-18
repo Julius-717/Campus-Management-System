@@ -22,3 +22,4 @@ class Std_info():
             self.mobno = StringVar()
             self.email = StringVar()
             self.dob = StringVar()
+            self.gender = StringVar()
