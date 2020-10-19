@@ -146,3 +146,8 @@ def marksheet():
         grade.set(' ')
         div.set(' ')
         result.set(' ')  
+
+    # Frame_1
+    Frame_1 = LabelFrame(root, width = 1200, height = 400, font = ('arial',20,'bold'), bg = 'Navajo white', bd = 10, \
+        text = 'Student Details', relief = 'ridge')
+    Frame_1.grid(row = 1, column = 0, pady = 20, padx = 20)
