@@ -29,3 +29,4 @@ def marksheet():
     gt = DoubleVar()
     per = DoubleVar()
     cgpa = DoubleVar()
+    grade = StringVar()
