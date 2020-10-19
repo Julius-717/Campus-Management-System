@@ -21,3 +21,4 @@ def marksheet():
     gender = StringVar()
     scl = StringVar()
     email = StringVar()
+    m1 = DoubleVar()
