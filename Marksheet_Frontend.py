@@ -415,3 +415,20 @@ def search_result_marksheet(row):
     Label_Email.grid(row = 3, column = 3, padx = 80)
     Entry_Email = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = email)
     Entry_Email.grid(row = 3, column = 4, padx = 5, pady = 5)
+
+    # Frame 2
+    Frame_2 = LabelFrame(root, width = 1200, height = 400, font = ('arial',20,'bold'), bg = 'Navajo white', bd = 10 \
+        , text = 'Grades Point Obtained', relief = 'ridge')
+    Frame_2.grid(row = 3, column = 0)
+
+    m1 = DoubleVar(Frame_2,row[0][9])
+    m2 = DoubleVar(Frame_2,row[0][10])
+    m3 = DoubleVar(Frame_2,row[0][11])
+    m4 = DoubleVar(Frame_2,row[0][12])
+    m5 = DoubleVar(Frame_2,row[0][13])
+    gt = DoubleVar(Frame_2,row[0][14])
+    per = DoubleVar(Frame_2,row[0][15])
+    cgpa = DoubleVar(Frame_2,row[0][16])
+    grade = StringVar(Frame_2,row[0][17])
+    div = StringVar(Frame_2,row[0][18])
+    result = StringVar(Frame_2,row[0][19])
