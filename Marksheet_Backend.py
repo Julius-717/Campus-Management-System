@@ -47,3 +47,4 @@ def search(roll):
     row = cur.fetchall()
     return row
 
+connect()
