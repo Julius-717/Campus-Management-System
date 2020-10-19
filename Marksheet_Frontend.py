@@ -284,3 +284,15 @@ def marksheet():
     Entry_5_3.grid(row = 8, column = 3)
     Entry_6_3 = Entry(Frame_2, textvariable = var_3, font = ('arial',16), width = 5, state = 'readonly')
     Entry_6_3.grid(row = 9, column = 3)
+
+    # Buttons
+    Btn_Compute = Button(Frame_2, text = 'COMPUTE', font = ('arial',12,'bold'), width = 10, command = Compute)
+    Btn_Compute.grid(row = 4, column = 4, padx = 50, pady = 6)
+    Btn_Save = Button(Frame_2, text = 'SAVE', font = ('arial',12,'bold'), width = 10, command = Add)
+    Btn_Save.grid(row = 5, column = 4, padx = 50, pady = 6)
+    Btn_Update = Button(Frame_2, text = 'UPDATE', font = ('arial',12,'bold'), width = 10, command = Update)
+    Btn_Update.grid(row = 6, column = 4, padx = 50, pady = 6)
+    Btn_Cancel = Button(Frame_2, text = 'RESET', font = ('arial',12,'bold'), width = 10, command = Reset)
+    Btn_Cancel.grid(row = 7, column = 4, padx = 50, pady = 6)
+    Btn_Exit = Button(Frame_2, text = 'EXIT', font = ('arial',12,'bold'), width = 10, command = Exit)
+    Btn_Exit.grid(row = 8, column = 4, padx = 50, pady = 6)
