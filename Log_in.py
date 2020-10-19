@@ -20,3 +20,5 @@ class Window_1:
         self.Frame = Frame(self.root, bg='lightskyblue')
         self.Frame.pack()
 
+
+        self.Username = StringVar()
