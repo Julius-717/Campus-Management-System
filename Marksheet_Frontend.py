@@ -45,3 +45,9 @@ def marksheet():
             Marksheet_Backend.update(name.get(),roll.get(),fname.get(),mname.get(),DOB.get(),gender.get(), \
                 scl.get(),email.get(),m1.get(),m2.get(),m3.get(),m4.get(),m5.get(), \
                     gt.get(),per.get(),cgpa.get(),grade.get(),div.get(),result.get())
+
+    def Exit():
+        Exit = tkinter.messagebox.askyesno('Marksheet', 'Confirm if you want to Exit')
+        if Exit > 0:
+            root.destroy()
+            return
