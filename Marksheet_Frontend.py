@@ -16,3 +16,4 @@ def marksheet():
     name = StringVar()
     roll = StringVar()
     fname = StringVar()
+    mname = StringVar()
