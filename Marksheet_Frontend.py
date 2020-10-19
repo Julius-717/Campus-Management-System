@@ -11,3 +11,6 @@ def marksheet():
     root.title('Marksheet')
     root.geometry('1350x750')
     root.config(bg = 'Navajo white')
+
+    # Variables
+    name = StringVar()
