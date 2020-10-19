@@ -10,4 +10,6 @@ import datetime
 def main():
     root = Tk()
     app = Window_1(root)
-    
+
+class Window_1:
+    de
