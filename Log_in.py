@@ -12,4 +12,6 @@ def main():
     app = Window_1(root)
 
 class Window_1:
-    de
+    def __init__(self, root):
+        self.root = root
+        self.root.title('Login')
