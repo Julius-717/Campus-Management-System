@@ -43,4 +43,8 @@ class Window_1:
         self.Label_Password = Label(self.Login_Frame_1, text = 'Password', font = ('arial',20,'bold'), bg = 'lightskyblue', bd = 20)
         self.Label_Password.grid(row = 1, column = 0)
         self.text_Password = Entry(self.Login_Frame_1, font = ('arial',20,'bold'), show = '*', textvariable = self.Password)
-        self.text_Password.grid(row = 1, column = 1) 
+        self.text_Password.grid(row = 1, column = 1)
+
+        # buttons
+        self.btnLogin = Button(self.Login_Frame_2, text = 'Login', width = 10, font = ('airia',15,'bold'), command = self.Login)
+        self.btnLogin.grid(row = 3, column = 0, padx = 8, pady = 20)
