@@ -523,3 +523,8 @@ def search_result_marksheet(row):
     # Buttons
     Btn_Exit = Button(Frame_2, text = 'EXIT', font = ('arial',12,'bold'), width = 10, command = root.destroy)
     Btn_Exit.grid(row = 8, column = 4, padx = 50, pady = 6)
+
+    root.mainloop()
+
+if __name__ == '__main__':
+    marksheet()
