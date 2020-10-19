@@ -79,4 +79,20 @@ class Window_1:
         if self.Exit > 0:
             self.root.destroy()
             return
-            
+    
+    def __menu__(self):
+        filename = 'Menu.py'
+        os.system(filename)
+        os.system('vscode'+filename)
+
+class Window_2:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Login Main Menu")
+        self.root.geometry('1350x750')
+        self.root.config(bg='sky blue')
+        self.Frame = Frame(self.root, bg='lightskyblue')
+        self.Frame.pack()
+
+if __name__ == '__main__':
+    main()
