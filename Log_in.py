@@ -72,3 +72,11 @@ class Window_1:
         self.Username.set("")
         self.Password.set("")
         self.text_Username.focus()
+
+    # Exit Button Function
+    def Exit(self):
+        self.Exit = tkinter.messagebox.askokcancel("Login System", "Confirm if you want to Exit")
+        if self.Exit > 0:
+            self.root.destroy()
+            return
+            
