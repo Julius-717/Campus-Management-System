@@ -17,3 +17,6 @@ class Window_1:
         self.root.title('Login')
         self.root.geometry('1350x750')
         self.root.config(bg='lightskyblue')
+        self.Frame = Frame(self.root, bg='lightskyblue')
+        self.Frame.pack()
+
