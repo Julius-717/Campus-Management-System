@@ -18,3 +18,4 @@ def marksheet():
     fname = StringVar()
     mname = StringVar()
     DOB = StringVar()
+    gender = StringVar()
