@@ -51,3 +51,6 @@ class Window_1:
 
         self.btnReset = Button(self.Login_Frame_2, text = 'Reset', width = 10, font = ('airia',15,'bold'), command = self.Reset)
         self.btnReset.grid(row = 3, column = 1, padx = 8, pady = 20)
+
+        self.btnExit = Button(self.Login_Frame_2, text = 'Exit', width = 10, font = ('airia',15,'bold'), command = self.Exit)
+        self.btnExit.grid(row = 3, column = 2, padx = 8, pady = 20)
