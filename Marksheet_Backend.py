@@ -38,3 +38,12 @@ def update(id,name = ' ',roll = ' ',fname = ' ',mname = ' ',DOB = ' ',gender = '
 
     con.commit() 
     con.close()
+
+def search(roll):
+    con = sqlite3.connect('Marks.db')
+    cur = con.cursor()
+
+    cur.execute('SELECT * FROM Marks WHERE roll = ?',(roll,))
+    row = cur.fetchall()
+    return row
+
