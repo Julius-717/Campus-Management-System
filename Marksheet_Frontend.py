@@ -296,3 +296,11 @@ def marksheet():
     Btn_Cancel.grid(row = 7, column = 4, padx = 50, pady = 6)
     Btn_Exit = Button(Frame_2, text = 'EXIT', font = ('arial',12,'bold'), width = 10, command = Exit)
     Btn_Exit.grid(row = 8, column = 4, padx = 50, pady = 6)
+
+    root.mainloop()
+
+def search_result_marksheet(row):
+    root = Tk()
+    root.title('Marksheet')
+    root.geometry('1350x750')
+    root.config(bg='Navajo white')
