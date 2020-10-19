@@ -13,3 +13,15 @@ def connect():
 
     con.commit()
     con.close()
+
+def insert(name = ' ',roll = ' ',fname = ' ',mname = ' ',DOB = ' ',gender = ' ',scl = ' ',email = ' ',m1 = ' ',m2 = ' ', \
+    m3 = ' ',m4 = ' ',m5 = ' ',gt = ' ',per = ' ',cgpa = ' ',grade = ' ', div = ' ', result = ' '):
+    con = sqlite3.connect('Marks.db')
+    cur = con.cursor()
+
+    cur.execute('INSERT INTO Marks VALUES (NULL,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',(name,roll,fname,mname,DOB,gender, \
+        scl,email,m1,m2,m3,m4,m5,gt,per,\
+            cgpa,grade,div,result))
+
+    con.commit()
+    con.close()
