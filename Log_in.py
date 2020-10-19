@@ -16,3 +16,4 @@ class Window_1:
         self.root = root
         self.root.title('Login')
         self.root.geometry('1350x750')
+        self.root.config(bg='lightskyblue')
