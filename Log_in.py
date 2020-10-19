@@ -54,3 +54,15 @@ class Window_1:
 
         self.btnExit = Button(self.Login_Frame_2, text = 'Exit', width = 10, font = ('airia',15,'bold'), command = self.Exit)
         self.btnExit.grid(row = 3, column = 2, padx = 8, pady = 20)
+
+        # Login Button Function
+    def Login(self):
+        u = (self.Username.get())
+        p = (self.Password.get())
+
+        if (u == str('Kash') and p == str(12345678)):
+            self.__menu__()
+        else:
+            tkinter.messagebox.askyesno("Login", "Error : Wrong Password")
+            self.Username.set("")
+            self.Password.set("")
