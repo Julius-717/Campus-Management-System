@@ -7,3 +7,7 @@ import random
 import time
 import datetime
 
+def main():
+    root = Tk()
+    app = Window_1(root)
+    
