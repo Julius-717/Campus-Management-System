@@ -27,3 +27,4 @@ def marksheet():
     m4 = DoubleVar()
     m5 = DoubleVar()
     gt = DoubleVar()
+    per = DoubleVar()
