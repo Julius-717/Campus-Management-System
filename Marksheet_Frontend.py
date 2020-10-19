@@ -20,3 +20,4 @@ def marksheet():
     DOB = StringVar()
     gender = StringVar()
     scl = StringVar()
+    email = StringVar()
