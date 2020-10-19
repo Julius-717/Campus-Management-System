@@ -360,3 +360,17 @@ def search_result_marksheet(row):
             div.set('SECOND')
         elif Per <= 100:
             div.set('FIRST')     
+
+    # Frame_1b
+    Frame_1 = LabelFrame(root, width = 1200, height = 400, font = ('arial',20,'bold'), bg = 'Navajo white', bd = 10, \
+        text = 'Student Details', relief = 'ridge')
+    Frame_1.grid(row = 1, column = 0, pady = 20, padx = 20)
+
+    name = StringVar(Frame_1,value=row[0][1])
+    roll = StringVar(Frame_1,value=row[0][2])
+    fname = StringVar(Frame_1,value=row[0][3])
+    mname = StringVar(Frame_1,value=row[0][4])
+    DOB = StringVar(Frame_1,value=row[0][5])
+    gender = StringVar(Frame_1,value=row[0][6])
+    scl = StringVar(Frame_1,value=row[0][7])
+    email = StringVar(Frame_1,value=row[0][8])
