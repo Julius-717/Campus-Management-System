@@ -48,3 +48,6 @@ class Window_1:
         # buttons
         self.btnLogin = Button(self.Login_Frame_2, text = 'Login', width = 10, font = ('airia',15,'bold'), command = self.Login)
         self.btnLogin.grid(row = 3, column = 0, padx = 8, pady = 20)
+
+        self.btnReset = Button(self.Login_Frame_2, text = 'Reset', width = 10, font = ('airia',15,'bold'), command = self.Reset)
+        self.btnReset.grid(row = 3, column = 1, padx = 8, pady = 20)
