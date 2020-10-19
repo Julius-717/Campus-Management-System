@@ -26,3 +26,10 @@ class Window_1:
 
         self.Lbl_Title = Label(self.Frame, text = 'Login Menu', font = ('arial',55,'bold'), bg = 'lightskyblue', fg = 'Black')
         self.Lbl_Title.grid(row = 0, column = 0, columnspan =3, pady = 40)
+
+        self.Login_Frame_1 = LabelFrame(self.Frame, width = 1350, height = 600, relief = 'ridge', bg = 'lightskyblue', bd = 15,
+                        font = ('arial',20,'bold'))
+        self.Login_Frame_1.grid(row = 1, column =0)
+        self.Login_Frame_2 = LabelFrame(self.Frame, width = 1000, height = 600, relief = 'ridge',bg = 'lightskyblue', bd = 15,
+                        font = ('arial',20,'bold'))
+        self.Login_Frame_2.grid(row = 2, column = 0)
