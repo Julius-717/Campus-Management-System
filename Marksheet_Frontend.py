@@ -192,3 +192,8 @@ def marksheet():
     Label_Email.grid(row = 3, column = 3, padx = 80)
     Entry_Email = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = email)
     Entry_Email.grid(row = 3, column = 4, padx = 5, pady = 5)
+
+    # Frame 2
+    Frame_2 = LabelFrame(root, width = 1200, height = 400, font = ('arial',20,'bold'), bg = 'Navajo white', bd = 10 \
+        , text = 'Grades Point Obtained', relief = 'ridge')
+    Frame_2.grid(row = 3, column = 0)
