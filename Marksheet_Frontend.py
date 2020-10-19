@@ -30,3 +30,5 @@ def marksheet():
     per = DoubleVar()
     cgpa = DoubleVar()
     grade = StringVar()
+    div = StringVar()
+    result = StringVar()
