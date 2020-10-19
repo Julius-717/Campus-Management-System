@@ -39,3 +39,9 @@ def marksheet():
             Marksheet_Backend.insert(name.get(),roll.get(),fname.get(),mname.get(),DOB.get(),gender.get(), \
                 scl.get(),email.get(),m1.get(),m2.get(),m3.get(),m4.get(),m5.get(), \
                     gt.get(),per.get(),cgpa.get(),grade.get(),div.get(),result.get())
+
+    def Update():
+        if(len(roll.get()) != 0):
+            Marksheet_Backend.update(name.get(),roll.get(),fname.get(),mname.get(),DOB.get(),gender.get(), \
+                scl.get(),email.get(),m1.get(),m2.get(),m3.get(),m4.get(),m5.get(), \
+                    gt.get(),per.get(),cgpa.get(),grade.get(),div.get(),result.get())
