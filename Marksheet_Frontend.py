@@ -28,3 +28,4 @@ def marksheet():
     m5 = DoubleVar()
     gt = DoubleVar()
     per = DoubleVar()
+    cgpa = DoubleVar()
