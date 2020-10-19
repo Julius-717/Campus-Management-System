@@ -374,3 +374,44 @@ def search_result_marksheet(row):
     gender = StringVar(Frame_1,value=row[0][6])
     scl = StringVar(Frame_1,value=row[0][7])
     email = StringVar(Frame_1,value=row[0][8])
+
+    # Labels and Entries frame_1b
+    Label_Name = Label(Frame_1, text = 'Name', font = ('arial',15,'bold'), bg = 'Navajo white')
+    Label_Name.grid(row = 0, column = 0, padx = 80)
+    Entry_Name = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = name)
+    Entry_Name.grid(row = 0, column = 1, padx = 5, pady = 5)
+
+    Label_Roll_no = Label(Frame_1, text = 'Roll Number', font = ('arial',15,'bold'), bg = 'Navajo white')
+    Label_Roll_no.grid(row = 0, column = 3, padx = 80)
+    Entry_Roll_no = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = roll)
+    Entry_Roll_no.grid(row = 0, column = 4, padx = 40)
+
+    Label_Father_Name = Label(Frame_1, text = 'Father Name', font = ('arial',15,'bold'), bg = 'Navajo white')
+    Label_Father_Name.grid(row = 1, column = 0, padx = 80)
+    Entry_Father_Name = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = fname)
+    Entry_Father_Name.grid(row = 1, column = 1, padx = 5, pady = 10)
+
+    Label_Mother_Name = Label(Frame_1, text = 'Mother Name', font = ('arial',15,'bold'), bg = 'Navajo white')
+    Label_Mother_Name.grid(row = 1, column = 3, padx = 80)
+    Entry_Mother_Name = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = mname)
+    Entry_Mother_Name.grid(row = 1, column = 4, padx = 5)
+
+    Label_DOB = Label(Frame_1, text = 'Date of Birth', font = ('arial',15,'bold'), bg = 'Navajo white')
+    Label_DOB.grid(row = 2, column = 0, padx = 80)
+    Entry_DOB = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = DOB)
+    Entry_DOB.grid(row = 2, column = 1, padx = 5, pady = 5)
+
+    Label_Gender = Label(Frame_1, text = 'Gender', font = ('arial',15,'bold'), bg = 'Navajo white')
+    Label_Gender.grid(row = 2, column = 3, padx = 80)
+    Entry_Gender = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = gender)
+    Entry_Gender.grid(row = 2, column = 4, padx = 5, pady = 5)
+
+    Label_School = Label(Frame_1, text = 'School Name', font = ('arial',15,'bold'), bg = 'Navajo white')
+    Label_School.grid(row = 3, column = 0, padx = 80)
+    Entry_School = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = scl)
+    Entry_School.grid(row = 3, column = 1, padx = 5, pady = 5)
+
+    Label_Email = Label(Frame_1, text = 'Email ID', font = ('arial',15,'bold'), bg = 'Navajo white')
+    Label_Email.grid(row = 3, column = 3, padx = 80)
+    Entry_Email = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = email)
+    Entry_Email.grid(row = 3, column = 4, padx = 5, pady = 5)
