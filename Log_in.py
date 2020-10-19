@@ -66,3 +66,9 @@ class Window_1:
             tkinter.messagebox.askyesno("Login", "Error : Wrong Password")
             self.Username.set("")
             self.Password.set("")
+
+    # Reset Button Function
+    def Reset(self):
+        self.Username.set("")
+        self.Password.set("")
+        self.text_Username.focus()
