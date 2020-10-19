@@ -519,3 +519,7 @@ def search_result_marksheet(row):
     Entry_5_3.grid(row = 8, column = 3)
     Entry_6_3 = Entry(Frame_2, textvariable = var_3, font = ('arial',16), width = 5)
     Entry_6_3.grid(row = 9, column = 3)
+
+    # Buttons
+    Btn_Exit = Button(Frame_2, text = 'EXIT', font = ('arial',12,'bold'), width = 10, command = root.destroy)
+    Btn_Exit.grid(row = 8, column = 4, padx = 50, pady = 6)
