@@ -151,3 +151,34 @@ def marksheet():
     Frame_1 = LabelFrame(root, width = 1200, height = 400, font = ('arial',20,'bold'), bg = 'Navajo white', bd = 10, \
         text = 'Student Details', relief = 'ridge')
     Frame_1.grid(row = 1, column = 0, pady = 20, padx = 20)
+
+    # Labels and Entries for Frame_1
+    Label_Name = Label(Frame_1, text = 'Name', font = ('arial',15,'bold'), bg = 'Navajo white')
+    Label_Name.grid(row = 0, column = 0, padx = 80)
+    Entry_Name = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = name)
+    Entry_Name.grid(row = 0, column = 1, padx = 5, pady = 5)
+
+    Label_Roll_no = Label(Frame_1, text = 'Roll Number', font = ('arial',15,'bold'), bg = 'Navajo white')
+    Label_Roll_no.grid(row = 0, column = 3, padx = 80)
+    Entry_Roll_no = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = roll)
+    Entry_Roll_no.grid(row = 0, column = 4, padx = 40)
+
+    Label_Father_Name = Label(Frame_1, text = 'Father Name', font = ('arial',15,'bold'), bg = 'Navajo white')
+    Label_Father_Name.grid(row = 1, column = 0, padx = 80)
+    Entry_Father_Name = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = fname)
+    Entry_Father_Name.grid(row = 1, column = 1, padx = 5, pady = 10)
+
+    Label_Mother_Name = Label(Frame_1, text = 'Mother Name', font = ('arial',15,'bold'), bg = 'Navajo white')
+    Label_Mother_Name.grid(row = 1, column = 3, padx = 80)
+    Entry_Mother_Name = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = mname)
+    Entry_Mother_Name.grid(row = 1, column = 4, padx = 5)
+
+    Label_DOB = Label(Frame_1, text = 'Date of Birth', font = ('arial',15,'bold'), bg = 'Navajo white')
+    Label_DOB.grid(row = 2, column = 0, padx = 80)
+    Entry_DOB = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = DOB)
+    Entry_DOB.grid(row = 2, column = 1, padx = 5, pady = 5)
+
+    Label_Gender = Label(Frame_1, text = 'Gender', font = ('arial',15,'bold'), bg = 'Navajo white')
+    Label_Gender.grid(row = 2, column = 3, padx = 80)
+    Entry_Gender = ttk.Combobox(Frame_1, values = (' ','Male','Female','Others'), font = ('arial',15), width = 23, textvariable = gender)
+    Entry_Gender.grid(row = 2, column = 4, padx = 5, pady = 5)
