@@ -24,3 +24,4 @@ def marksheet():
     m1 = DoubleVar()
     m2 = DoubleVar()
     m3 = DoubleVar()
+    m4 = DoubleVar()
