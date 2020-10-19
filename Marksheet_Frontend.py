@@ -182,3 +182,13 @@ def marksheet():
     Label_Gender.grid(row = 2, column = 3, padx = 80)
     Entry_Gender = ttk.Combobox(Frame_1, values = (' ','Male','Female','Others'), font = ('arial',15), width = 23, textvariable = gender)
     Entry_Gender.grid(row = 2, column = 4, padx = 5, pady = 5)
+
+    Label_School = Label(Frame_1, text = 'School Name', font = ('arial',15,'bold'), bg = 'Navajo white')
+    Label_School.grid(row = 3, column = 0, padx = 80)
+    Entry_School = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = scl)
+    Entry_School.grid(row = 3, column = 1, padx = 5, pady = 5)
+
+    Label_Email = Label(Frame_1, text = 'Email ID', font = ('arial',15,'bold'), bg = 'Navajo white')
+    Label_Email.grid(row = 3, column = 3, padx = 80)
+    Entry_Email = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = email)
+    Entry_Email.grid(row = 3, column = 4, padx = 5, pady = 5)
