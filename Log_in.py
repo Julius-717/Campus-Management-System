@@ -22,3 +22,4 @@ class Window_1:
 
 
         self.Username = StringVar()
+        self.Password = StringVar()
