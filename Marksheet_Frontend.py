@@ -22,3 +22,5 @@ def marksheet():
     scl = StringVar()
     email = StringVar()
     m1 = DoubleVar()
+    m2 = DoubleVar()
+    
