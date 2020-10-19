@@ -23,3 +23,6 @@ class Window_1:
 
         self.Username = StringVar()
         self.Password = StringVar()
+
+        self.Lbl_Title = Label(self.Frame, text = 'Login Menu', font = ('arial',55,'bold'), bg = 'lightskyblue', fg = 'Black')
+        self.Lbl_Title.grid(row = 0, column = 0, columnspan =3, pady = 40)
