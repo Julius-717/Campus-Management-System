@@ -10,7 +10,7 @@ def __marksheet__():
 def __Library__():
        filename = 'Library_Frontend.py'
        os.system(filename)
-       os.system('vscode'+filename)
+       os.system('notepad'+filename)
 
 def __information__():
        filename = 'Std_info_FrontEnd.py'
@@ -27,7 +27,7 @@ def menu():
        root = Tk()
        root.title('Menu')
        root.geometry('1350x750')
-       root.config(bg = 'turquoise')
+       root.config(bg = 'cadet blue')
        
        title_Frame = LabelFrame(root, font = ('arial',50,'bold'), width = 1000, height = 100, bg = 'cadet blue', relief = 'raise', bd = 13)
        title_Frame.grid(row = 0, column = 0, pady = 50)
