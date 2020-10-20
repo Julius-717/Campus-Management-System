@@ -61,8 +61,8 @@ class Window_1:
 
         #======================================================Code for Login Button==================================================================
     def Login(self):
-        u = (self.Username.get())
-        p = (self.Password.get())
+        u = (Username.get())
+        p = (Password.get())
 
         if (u == str('Prashant') and p == str(12345678)):
             self.__menu__()
