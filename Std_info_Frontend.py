@@ -119,15 +119,15 @@ class Std_info():
                      self.Main_Frame.grid(row = 0, column = 0, padx = 10, pady = 20)
 
                      self.Frame_1 = LabelFrame(self.Main_Frame, width = 600, height = 400, font = ('arial',15,'bold'), \
-                                               relief = 'ridge', bd = 10, bg = 'navajowhite', text = 'STUDENT INFORMATION ')
+                                               relief = 'ridge', bd = 10, bg = 'cadet blue', text = 'STUDENT INFORMATION ')
                      self.Frame_1.grid(row = 1, column = 0, padx = 10)
 
                      self.Frame_2 = LabelFrame(self.Main_Frame, width = 750, height = 400, font = ('arial',15,'bold'), \
-                                               relief = 'ridge', bd = 10, bg = 'navajowhite', text = 'STUDENT DATABASE')
+                                               relief = 'ridge', bd = 10, bg = 'cadet blue', text = 'STUDENT DATABASE')
                      self.Frame_2.grid(row = 1, column = 1, padx = 5)                  
                      
                      self.Frame_3 = LabelFrame(self.master, width = 1200, height = 100, font = ('arial',10,'bold'), \
-                                               bg = 'navajowhite', relief = 'ridge', bd = 13)
+                                               bg = 'cadet', relief = 'ridge', bd = 13)
                      self.Frame_3.grid(row = 2, column = 0, pady = 10)
 
 
