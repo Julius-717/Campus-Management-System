@@ -91,7 +91,6 @@ class Window_1:
     def __menu__(self):
         filename = 'Menu.py'
         os.system(filename)
-        os.system('notepad'+filename)
 
     '''def new_window(self):
         self.new_Window = Toplevel(self.master)
