@@ -34,7 +34,6 @@ class Window_1():
               def new():
                      filename = 'Marksheet_Frontend.py'
                      os.system(filename)
-                     os.system('notepad'+filename)
                            
 
               btnSearch = Button(frame, text = 'SEARCH', width = 15, font = ('arial',15,'bold'), command=Search)
