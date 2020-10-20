@@ -476,7 +476,7 @@ def search_result_marksheet(row):
        Label_obt_Marks = Label(Frame_2, text = 'TOTAL MARKS', font = ('arial',16,'bold'), bg = 'cadet blue')
        Label_obt_Marks.grid(row = 3, column = 3, padx = 20)
 
-       Label_1 = Label(Frame_2, text = 'MATHEMATICS', font = ('arial',14), bg = 'cadet blue')
+       Label_1 = Label(Frame_2, text = 'DISCRETE MATHEMATICS', font = ('arial',14), bg = 'cadet blue')
        Label_1.grid(row = 4, column = 0)
        Label_2 = Label(Frame_2, text = 'PHYSICS', font = ('arial',14), bg = 'cadet blue')
        Label_2.grid(row = 5, column = 0)
