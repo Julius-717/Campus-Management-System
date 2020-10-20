@@ -391,7 +391,7 @@ def search_result_marksheet(row):
        Frame_1.grid(row = 1, column = 0, pady = 20, padx = 20)
 
        name = StringVar(Frame_1,value=row[0][1])
-       roll = StringVar(Frame_1,value=row[0][2])
+       admission = StringVar(Frame_1,value=row[0][2])
        fname = StringVar(Frame_1,value=row[0][3])
        mname = StringVar(Frame_1,value=row[0][4])
        DOB = StringVar(Frame_1,value=row[0][5])
