@@ -27,7 +27,7 @@ def menu():
        root = Tk()
        root.title('Menu')
        root.geometry('1350x750')
-       root.config(bg = 'navajo white')
+       root.config(bg = 'turquoise')
        
        title_Frame = LabelFrame(root, font = ('arial',50,'bold'), width = 1000, height = 100, bg = 'navajo white', relief = 'raise', bd = 13)
        title_Frame.grid(row = 0, column = 0, pady = 50)
