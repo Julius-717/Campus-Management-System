@@ -34,14 +34,14 @@ def marksheet():
 
        #==============================================Functions==========================================================
        def Add():
-              if (len(roll.get()) != 0):
-                     Marksheet_Backend.insert(name.get(),roll.get(),fname.get(),mname.get(),DOB.get(),gender.get(), \
+              if (len(admission.get()) != 0):
+                     Marksheet_Backend.insert(name.get(),admission.get(),fname.get(),mname.get(),DOB.get(),gender.get(), \
                                               scl.get(),email.get(),m1.get(),m2.get(),m3.get(),m4.get(),m5.get(), \
                                               gt.get(),per.get(),cgpa.get(),grade.get(),div.get(),result.get())
 
        def Update():
-              if (len(roll.get()) != 0):
-                     Marksheet_Backend.update(name.get(),roll.get(),fname.get(),mname.get(),DOB.get(),gender.get(), \
+              if (len(admission.get()) != 0):
+                     Marksheet_Backend.update(name.get(),admission.get(),fname.get(),mname.get(),DOB.get(),gender.get(), \
                                               scl.get(),email.get(),m1.get(),m2.get(),m3.get(),m4.get(),m5.get(), \
                                               gt.get(),per.get(),cgpa.get(),grade.get(),div.get(),result.get())
                     
@@ -131,7 +131,7 @@ def marksheet():
 
        def Reset():
               name.set(' ')
-              roll.set(' ')
+              admission.set(' ')
               fname.set(' ')
               mname.set(' ')
               DOB.set(' ')
@@ -164,10 +164,10 @@ def marksheet():
        Entry_Name = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = name)
        Entry_Name.grid(row = 0, column = 1, padx = 5, pady = 5)
 
-       Label_Roll_no = Label(Frame_1, text = 'Admission Number', font = ('arial',15,'bold'), bg = 'cadet blue')
-       Label_Roll_no.grid(row = 0, column = 3, padx = 80)
-       Entry_Roll_no = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = roll)
-       Entry_Roll_no.grid(row = 0, column = 4, padx = 40)
+       Label_Admission_no = Label(Frame_1, text = 'Admission Number', font = ('arial',15,'bold'), bg = 'cadet blue')
+       Label_admission_no.grid(row = 0, column = 3, padx = 80)
+       Entry_Admission_no = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = admission)
+       Entry_Admission_no.grid(row = 0, column = 4, padx = 40)
 
        Label_Father_Name = Label(Frame_1, text = 'Father Name', font = ('arial',15,'bold'), bg = 'cadet blue')
        Label_Father_Name.grid(row = 1, column = 0, padx = 80)
@@ -407,10 +407,10 @@ def search_result_marksheet(row):
        Entry_Name = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = name)
        Entry_Name.grid(row = 0, column = 1, padx = 5, pady = 5)
 
-       Label_Roll_no = Label(Frame_1, text = 'Admission Number', font = ('arial',15,'bold'), bg = 'cadet blue')
-       Label_Roll_no.grid(row = 0, column = 3, padx = 80)
-       Entry_Roll_no = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = roll)
-       Entry_Roll_no.grid(row = 0, column = 4, padx = 40)
+       Label_Admission_no = Label(Frame_1, text = 'Admission Number', font = ('arial',15,'bold'), bg = 'cadet blue')
+       Label_Admission_no.grid(row = 0, column = 3, padx = 80)
+       Entry_Admission_no = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = admission)
+       Entry_Admission_no.grid(row = 0, column = 4, padx = 40)
 
        Label_Father_Name = Label(Frame_1, text = 'Father Name', font = ('arial',15,'bold'), bg = 'cadet blue')
        Label_Father_Name.grid(row = 1, column = 0, padx = 80)
