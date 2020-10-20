@@ -13,7 +13,7 @@ def main():
 
 
 class Window_1:
-    def __init__(self, master):
+    def __init__(self, root):
         self.root = root
         self.root.title("Login Window")
         self.root.geometry('1350x750')
@@ -99,11 +99,11 @@ class Window_1:
 
 class Window_2:
     def __init__(self, master):
-        self.master = master
-        self.master.title("Login Main Menu")
-        self.master.geometry('1350x750')
-        self.master.config(bg = 'sky blue')
-        self.Frame = Frame(self.master, bg = 'lightskyblue')
+        self.root = master
+        self.root.title("Login Main Menu")
+        self.root.geometry('1350x750')
+        self.root.config(bg = 'sky blue')
+        self.Frame = Frame(self.root, bg = 'lightskyblue')
         self.Frame.pack()
 
     
