@@ -22,7 +22,7 @@ class Window_1:
         self.Frame.pack()
 
 
-        self.Username = StringVar()                             # x = StringVar()  Holds a string; default value is " "
+        Username = StringVar()                             # x = StringVar()  Holds a string; default value is " "
         self.Password = StringVar()
 
         self.Lbl_Title = Label(self.Frame, text = 'Login Menu', font = ('arial',55,'bold'), bg = 'lightskyblue', fg = 'Black')
