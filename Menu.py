@@ -29,10 +29,10 @@ def menu():
        root.geometry('1350x750')
        root.config(bg = 'turquoise')
        
-       title_Frame = LabelFrame(root, font = ('arial',50,'bold'), width = 1000, height = 100, bg = 'navajo white', relief = 'raise', bd = 13)
+       title_Frame = LabelFrame(root, font = ('arial',50,'bold'), width = 1000, height = 100, bg = 'cadet blue', relief = 'raise', bd = 13)
        title_Frame.grid(row = 0, column = 0, pady = 50)
        
-       title_Label = Label(title_Frame, text = 'MENU', font = ('arial',30,'bold'), bg = 'navajo white')
+       title_Label = Label(title_Frame, text = 'MENU', font = ('arial',30,'bold'), bg = 'cadet blue')
        title_Label.grid(row = 0, column = 0, padx = 150)
 
 
