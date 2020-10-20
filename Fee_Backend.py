@@ -1,4 +1,3 @@
-# Campus-Management-System
 import sqlite3
 
 def connect():

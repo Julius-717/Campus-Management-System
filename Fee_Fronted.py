@@ -6,11 +6,11 @@ import Fee_Backend
 
 
 class Fee():
-    def __init__(self, master):
-        self.master = master
-        self.master.title('Fee Report')
-        self.master.geometry('1350x750')
-        self.master.config(bg='Navajo white')
+    def __init__(self, root):
+        self.root = root
+        self.root.title('Fee Report')
+        self.root.geometry('1350x750')
+        self.root.config(bg='Navajo white')
 
         # ==================================================Variables=================================================
         self.recpt = StringVar()
@@ -70,7 +70,7 @@ class Fee():
             self.recpt.set(' ')
             self.name.set(' ')
             self.admsn.set(' ')
-            #self.date.set(' ')
+            # self.date.set(' ')
             self.branch.set(' ')
             self.sem.set(' ')
             self.paid.set(' ')

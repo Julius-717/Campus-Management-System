@@ -1,4 +1,3 @@
-# Campus-Management-System
 from tkinter import*
 from tkinter import ttk
 import random
