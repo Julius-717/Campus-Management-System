@@ -14,11 +14,11 @@ def main():
 
 class Window_1:
     def __init__(self, master):
-        self.master = master
-        self.master.title("Login Window")
-        self.master.geometry('1350x750')
-        self.master.config(bg = 'lightskyblue')
-        self.Frame = Frame(self.master, bg = 'lightskyblue')
+        self.root = root
+        self.root.title("Login Window")
+        self.root.geometry('1350x750')
+        self.root.config(bg = 'lightskyblue')
+        self.Frame = Frame(self.root, bg = 'lightskyblue')
         self.Frame.pack()
 
 
