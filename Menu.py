@@ -10,7 +10,7 @@ def __marksheet__():
 def __Library__():
        filename = 'Library_Frontend.py'
        os.system(filename)
-       os.system('notepad'+filename)
+       os.system('vscode'+filename)
 
 def __information__():
        filename = 'Std_info_FrontEnd.py'

@@ -5,6 +5,7 @@ from tkinter import ttk                                 # for combobox
 import random                                           # for reference
 import time
 import datetime
+from functools import partial
 
 def main():
     root = Tk()
@@ -81,7 +82,7 @@ class Window_1:
 
         #======================================================Code for Exit Button==================================================================
 
-    def Exit(self):
+    def iExit(self):
         self.Exit = tkinter.messagebox.askokcancel("Login System", "Confirm if you want to Exit")
         if self.Exit > 0:
             self.master.destroy()
