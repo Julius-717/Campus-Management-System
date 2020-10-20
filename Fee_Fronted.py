@@ -10,7 +10,7 @@ class Fee():
         self.root = root
         self.root.title('Fee Report')
         self.root.geometry('1350x750')
-        self.root.config(bg='Navajo white')
+        self.root.config(bg='cadet blue')
 
         # ==================================================Variables=================================================
         self.recpt = StringVar()
@@ -132,68 +132,68 @@ class Fee():
         Main_Frame.grid()
 
         Title_Frame = LabelFrame(
-            Main_Frame, width=1350, height=100, bg='Navajo white', relief='ridge', bd=15)
+            Main_Frame, width=1350, height=100, bg='cadet blue', relief='ridge', bd=15)
         Title_Frame.pack(side=TOP)
 
         self.lblTitle = Label(Title_Frame, font=('arial', 40, 'bold'), text='FEE REPORT',
-                              bg='navajowhite', padx=13)
+                              bg='cadet blue', padx=13)
         self.lblTitle.grid(padx=400)
 
         Data_Frame = Frame(Main_Frame, width=1350, height=350,
-                           bg='Navajo white', relief='ridge', bd=15)
+                           bg='cadet blue', relief='ridge', bd=15)
         Data_Frame.pack(side=TOP, padx=15)
 
-        Frame_1 = LabelFrame(Data_Frame, width=850, height=350, bg='Navajo white', relief='ridge', bd=8,
+        Frame_1 = LabelFrame(Data_Frame, width=850, height=350, bg='cadet blue', relief='ridge', bd=8,
                              text='Informations', font=('arial', 15, 'bold'))
         Frame_1.pack(side=LEFT, padx=10)
 
-        Frame_2 = LabelFrame(Data_Frame, width=495, height=350, bg='Navajo white', relief='ridge', bd=8,
+        Frame_2 = LabelFrame(Data_Frame, width=495, height=350, bg='cadet blue', relief='ridge', bd=8,
                              text='Fee Receipt', font=('arial', 15, 'bold'))
         Frame_2.pack(side=RIGHT, padx=10)
 
         List_Frame = Frame(Main_Frame, width=1350, height=150,
-                           bg='Navajo white', relief='ridge', bd=15)
+                           bg='cadet blue', relief='ridge', bd=15)
         List_Frame.pack(side=TOP, padx=15)
 
         Button_Frame = Frame(Main_Frame, width=1350, height=80,
-                             bg='Navajo white', relief='ridge', bd=15)
+                             bg='cadet blue', relief='ridge', bd=15)
         Button_Frame.pack(side=TOP)
 
         # ===================================================Labels================================================
         self.recpt_label = Label(Frame_1, text='Receipt No. : ', font=(
-            'arial', 14, 'bold'), bg='Navajo white')
+            'arial', 14, 'bold'), bg='cadet blue')
         self.recpt_label.grid(row=0, column=0, padx=15, sticky=W)
 
         self.name_label = Label(Frame_1, text='Student Name : ', font=(
-            'arial', 14, 'bold'), bg='Navajo white')
+            'arial', 14, 'bold'), bg='cadet blue')
         self.name_label.grid(row=1, column=0, padx=15, sticky=W)
 
         self.admsn_label = Label(Frame_1, text='Admission No. : ', font=(
-            'arial', 14, 'bold'), bg='Navajo white')
+            'arial', 14, 'bold'), bg='cadet blue')
         self.admsn_label.grid(row=2, column=0, padx=15, sticky=W)
 
         self.Date_label = Label(Frame_1, text='Date : ', font=(
-            'arial', 14, 'bold'), bg='Navajo white')
+            'arial', 14, 'bold'), bg='cadet blue')
         self.Date_label.grid(row=3, column=0, padx=15, sticky=W)
 
         self.branch_label = Label(Frame_1, text='Branch : ', font=(
-            'arial', 14, 'bold'), bg='Navajo white')
+            'arial', 14, 'bold'), bg='cadet blue')
         self.branch_label.grid(row=4, column=0, padx=15, sticky=W)
 
         self.sem_label = Label(Frame_1, text='Semester : ', font=(
-            'arial', 14, 'bold'), bg='Navajo white')
+            'arial', 14, 'bold'), bg='cadet blue')
         self.sem_label.grid(row=5, column=0, padx=15, sticky=W)
 
         self.total_label = Label(Frame_1, text='TOTAL AMOUNT : ', font=(
-            'arial', 14, 'bold'), bg='Navajo white')
+            'arial', 14, 'bold'), bg='cadet blue')
         self.total_label.grid(row=2, column=2, padx=5, sticky=W)
 
         self.paid_label = Label(Frame_1, text='PAID AMOUNT : ', font=(
-            'arial', 14, 'bold'), bg='Navajo white')
+            'arial', 14, 'bold'), bg='cadet blue')
         self.paid_label.grid(row=3, column=2, padx=5, sticky=W)
 
         self.due_label = Label(Frame_1, text='BALANCE : ', font=(
-            'arial', 14, 'bold'), bg='Navajo white')
+            'arial', 14, 'bold'), bg='cadet blue')
         self.due_label.grid(row=4, column=2, padx=5, sticky=W)
 
         # ==================================================Entries=================================================
@@ -217,7 +217,7 @@ class Fee():
             'arial', 14), textvariable=self.date)
         self.Date_entry.grid(row=3, column=1, padx=15, pady=5)
 
-        self.branch_entry = ttk.Combobox(Frame_1, values=(' ', 'CSE', 'IT', 'ETC/ET&T', 'Mechanical', 'Civil', 'EE', 'EEE'),
+        self.branch_entry = ttk.Combobox(Frame_1, values=(' ', 'CSE', 'IT', 'ETC/ET&T', 'Mechanical', 'Civil', 'Business', 'Professional'),
                                          font=('arial', 14), width=19, textvariable=self.branch)
         self.branch_entry.grid(row=4, column=1, padx=15, pady=5)
 
