@@ -39,7 +39,7 @@ class Window_1:
         #===================================================LABEL and ENTRIES=======================================================================
         self.Label_Username = Label(self.Login_Frame_1, text = 'Username', font = ('arial',20,'bold'), bg = 'lightskyblue', bd = 20)
         self.Label_Username.grid(row = 0, column = 0)
-        self.text_Username = Entry(self.Login_Frame_1, font = ('arial',20,'bold'), textvariable = self.Username)
+        self.text_Username = Entry(self.Login_Frame_1, font = ('arial',20,'bold'), textvariable = Username)
         self.text_Username.grid(row = 0, column = 1, padx = 50)                       
         
         self.Label_Password = Label(self.Login_Frame_1, text = 'Password', font = ('arial',20,'bold'), bg = 'lightskyblue', bd = 20)
