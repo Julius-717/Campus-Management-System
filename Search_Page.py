@@ -28,7 +28,7 @@ class Window_1():
                            print(row)
                            Marksheet_Frontend.search_result_marksheet(row)
                      else:
-                            tkinter.messagebox.askokcancel('Attention','Please enter valid Roll No.')
+                            tkinter.messagebox.askokcancel('Attention','Please enter valid Admission No.')
                             return
 
               def new():
