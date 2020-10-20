@@ -82,10 +82,10 @@ class Window_1:
 
         #======================================================Code for Exit Button==================================================================
 
-    def iExit(self):
+    def Exit(self):
         self.Exit = tkinter.messagebox.askokcancel("Login System", "Confirm if you want to Exit")
         if self.Exit > 0:
-            self.master.destroy()
+            self.root.destroy()
             return
 
     def __menu__(self):
