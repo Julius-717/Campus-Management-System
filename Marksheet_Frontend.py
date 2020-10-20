@@ -12,7 +12,7 @@ def marksheet():
 
        #================================================Variables======================================================
        name = StringVar()
-       roll = StringVar()
+       admission = StringVar()
        fname = StringVar()
        mname = StringVar()
        DOB = StringVar()
@@ -164,7 +164,7 @@ def marksheet():
        Entry_Name = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = name)
        Entry_Name.grid(row = 0, column = 1, padx = 5, pady = 5)
 
-       Label_Roll_no = Label(Frame_1, text = 'Roll Number', font = ('arial',15,'bold'), bg = 'cadet blue')
+       Label_Roll_no = Label(Frame_1, text = 'Admission Number', font = ('arial',15,'bold'), bg = 'cadet blue')
        Label_Roll_no.grid(row = 0, column = 3, padx = 80)
        Entry_Roll_no = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = roll)
        Entry_Roll_no.grid(row = 0, column = 4, padx = 40)
