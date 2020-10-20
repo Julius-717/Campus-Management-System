@@ -16,7 +16,7 @@ class Window_1():
               frame = LabelFrame(self.master, width = 1000, height = 100, font = ('arial',30,'bold'), relief = 'ridge', bd = 15, bg = 'wheat')
               frame.grid(row = 1, column = 0, padx = 200, pady = 200)
 
-              label = Label(frame, text = 'Enter Roll Number', font = ('arial',25,'bold'), bg = 'wheat' )
+              label = Label(frame, text = 'Enter Admission Number', font = ('arial',25,'bold'), bg = 'wheat' )
               label.grid(row = 0, column = 0, padx = 100, pady = 10)
 
               entry = Entry(frame, font = ('arial',25,'bold'), textvariable = self.roll)
