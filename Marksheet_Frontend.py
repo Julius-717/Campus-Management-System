@@ -211,27 +211,27 @@ def marksheet():
 
        #======================================================Labels of Frame_2===========================================================
 
-       Label_Subject = Label(Frame_2, text = 'SUBJECT', font = ('arial',16,'bold'), bg = 'cadet blue')
-       Label_Subject.grid(row = 3, column = 0, padx = 50, pady = 10)
+       Label_Unit = Label(Frame_2, text = 'UNIT', font = ('arial',16,'bold'), bg = 'cadet blue')
+       Label_Unit.grid(row = 3, column = 0, padx = 50, pady = 10)
 
        Label_obt_Marks = Label(Frame_2, text = 'MARKS OBTAINED', font = ('arial',16,'bold'), bg = 'cadet blue')
        Label_obt_Marks.grid(row = 3, column = 1, padx = 20)
 
-       Label_Subject = Label(Frame_2, text = 'PASSING MARKS', font = ('arial',16,'bold'), bg = 'cadet blue')
-       Label_Subject.grid(row = 3, column = 2, padx = 20)
+       Label_Unit = Label(Frame_2, text = 'PASSING MARKS', font = ('arial',16,'bold'), bg = 'cadet blue')
+       Label_Unit.grid(row = 3, column = 2, padx = 20)
 
        Label_obt_Marks = Label(Frame_2, text = 'TOTAL MARKS', font = ('arial',16,'bold'), bg = 'cadet blue')
        Label_obt_Marks.grid(row = 3, column = 3, padx = 20)
 
-       Label_1 = Label(Frame_2, text = 'MATHEMATICS', font = ('arial',14), bg = 'cadet blue')
+       Label_1 = Label(Frame_2, text = 'DISCRETE MATHEMATICS', font = ('arial',14), bg = 'cadet blue')
        Label_1.grid(row = 4, column = 0)
-       Label_2 = Label(Frame_2, text = 'PHYSICS', font = ('arial',14), bg = 'cadet blue')
+       Label_2 = Label(Frame_2, text = 'CALCULUS', font = ('arial',14), bg = 'cadet blue')
        Label_2.grid(row = 5, column = 0)
-       Label_3 = Label(Frame_2, text = 'CHEMISTRY', font = ('arial',14), bg = 'cadet blue')
+       Label_3 = Label(Frame_2, text = 'PROBABILITY', font = ('arial',14), bg = 'cadet blue')
        Label_3.grid(row = 6, column = 0)
-       Label_4 = Label(Frame_2, text = 'HINDI', font = ('arial',14), bg = 'cadet blue')
+       Label_4 = Label(Frame_2, text = 'STATISTICS', font = ('arial',14), bg = 'cadet blue')
        Label_4.grid(row = 7, column = 0)
-       Label_5 = Label(Frame_2, text = 'ENGLISH', font = ('arial',14), bg = 'cadet blue')
+       Label_5 = Label(Frame_2, text = 'PROGRAMMING LANGUAGES', font = ('arial',14), bg = 'cadet blue')
        Label_5.grid(row = 8, column = 0)
        Label_6 = Label(Frame_2, text = 'GRAND TOTAL', font = ('arial',16), bg = 'cadet blue')
        Label_6.grid(row = 9, column = 0)
@@ -464,14 +464,14 @@ def search_result_marksheet(row):
 
        #======================================================Labels of Frame_2===========================================================
 
-       Label_Subject = Label(Frame_2, text = 'SUBJECT', font = ('arial',16,'bold'), bg = 'cadet blue')
-       Label_Subject.grid(row = 3, column = 0, padx = 50, pady = 10)
+       Label_Unit = Label(Frame_2, text = 'UNITS', font = ('arial',16,'bold'), bg = 'cadet blue')
+       Label_Unit.grid(row = 3, column = 0, padx = 50, pady = 10)
 
        Label_obt_Marks = Label(Frame_2, text = 'MARKS OBTAINED', font = ('arial',16,'bold'), bg = 'cadet blue')
        Label_obt_Marks.grid(row = 3, column = 1, padx = 20)
 
-       Label_Subject = Label(Frame_2, text = 'PASSING MARKS', font = ('arial',16,'bold'), bg = 'cadet blue')
-       Label_Subject.grid(row = 3, column = 2, padx = 20)
+       Label_Unit = Label(Frame_2, text = 'PASSING MARKS', font = ('arial',16,'bold'), bg = 'cadet blue')
+       Label_Unit.grid(row = 3, column = 2, padx = 20)
 
        Label_obt_Marks = Label(Frame_2, text = 'TOTAL MARKS', font = ('arial',16,'bold'), bg = 'cadet blue')
        Label_obt_Marks.grid(row = 3, column = 3, padx = 20)
