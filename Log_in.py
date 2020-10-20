@@ -64,7 +64,7 @@ class Window_1:
         u = (Username.get())
         p = (Password.get())
 
-        if (u == str('Prashant') and p == str(12345678)):
+        if (u == str('Darth') and p == str(123456789)):
             self.__menu__()
         else:
             tkinter.messagebox.askyesno("Login","Error : Wrong Password")
