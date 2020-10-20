@@ -37,13 +37,13 @@ def menu():
 
 
        #========================================================FRAMES===================================================================
-       Frame_1 = LabelFrame(root, font = ('arial',17,'bold'), width = 1000, height = 100, bg = 'navajo white', relief = 'ridge', bd = 10)
+       Frame_1 = LabelFrame(root, font = ('arial',17,'bold'), width = 1000, height = 100, bg = 'cadet blue', relief = 'ridge', bd = 10)
        Frame_1.grid(row = 1, column = 0, padx = 280)
-       Frame_2 = LabelFrame(root, font = ('arial',17,'bold'), width = 1000, height = 100, bg = 'navajo white', relief = 'ridge', bd = 10)
+       Frame_2 = LabelFrame(root, font = ('arial',17,'bold'), width = 1000, height = 100, bg = 'cadet blue', relief = 'ridge', bd = 10)
        Frame_2.grid(row = 2, column = 0, padx = 130, pady = 7)
-       Frame_3 = LabelFrame(root, font = ('arial',17,'bold'), width = 1000, height = 100, bg = 'navajo white', relief = 'ridge', bd = 10)
+       Frame_3 = LabelFrame(root, font = ('arial',17,'bold'), width = 1000, height = 100, bg = 'cadet blue', relief = 'ridge', bd = 10)
        Frame_3.grid(row = 3, column = 0, pady = 7)
-       Frame_4 = LabelFrame(root, font = ('arial',17,'bold'), width = 1000, height = 100, bg = 'navajo white', relief = 'ridge', bd = 10)
+       Frame_4 = LabelFrame(root, font = ('arial',17,'bold'), width = 1000, height = 100, bg = 'cadet blue', relief = 'ridge', bd = 10)
        Frame_4.grid(row = 4, column = 0, pady = 7)
        
 
