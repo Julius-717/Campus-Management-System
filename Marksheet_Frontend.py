@@ -8,7 +8,7 @@ def marksheet():
        root = Tk()
        root.title('Marksheet')
        root.geometry('1350x750')
-       root.config(bg = 'Navajo white')
+       root.config(bg = 'cadet blue')
 
        #================================================Variables======================================================
        name = StringVar()
