@@ -27,8 +27,8 @@ class Fee():
         def Tuple(event):
             try:
                 global st
-                index = self.list.curselection()[0]
-                st = self.list.get(index)
+                index = self.listbox.curselection()[0]
+                st = self.listbox.get(index)
 
                 self.recpt_entry.delete(0, END)
                 self.recpt_entry.insert(END, st[1])
@@ -51,20 +51,20 @@ class Fee():
             except IndexError:
                 pass
 
-        def Insert():
+        def Add():
             if (len(self.admsn.get()) != 0):
                 Fee_Backend.insert(self.recpt.get(), self.name.get(), self.admsn.get(), self.date.get(),
                                    self.branch.get(), self.sem.get(), self.total.get(), self.paid.get(),
                                    self.due.get())
-                self.list.delete(0, END)
-                self.list.insert(END, (self.recpt.get(), self.name.get(), self.admsn.get(), self.date.get(),
+                self.listbox.delete(0, END)
+                self.listbox.insert(END, (self.recpt.get(), self.name.get(), self.admsn.get(), self.date.get(),
                                        self.branch.get(), self.sem.get(), self.total.get(), self.paid.get(),
                                        self.due.get()))
 
-        def View():
-            self.list.delete(0, END)
+        def Display():
+            self.listbox.delete(0, END)
             for row in Fee_Backend.view():
-                self.list.insert(END, row, str(' '))
+                self.listbox.insert(END, row, str(' '))
 
         def Reset():
             self.recpt.set(' ')
@@ -76,12 +76,12 @@ class Fee():
             self.paid.set(' ')
             self.due.set(' ')
             self.Display.delete('1.0', END)
-            self.list.delete(0, END)
+            self.listbox.delete(0, END)
 
         def Delete():
             Fee_Backend.delete(st[0])
             Reset()
-            View()
+            Display()
 
         def Receipt():
             self.Display.delete('1.0', END)
@@ -110,15 +110,15 @@ class Fee():
             self.due.set(x3)
 
         def Search():
-            self.list.delete(0, END)
+            self.listbox.delete(0, END)
             for row in Fee_Backend.search(self.recpt.get(), self.name.get(), self.admsn.get(), self.date.get(),
                                           self.branch.get(), self.sem.get(), self.total.get(), self.paid.get(),
                                           self.due.get()):
-                self.list.insert(END, row, str(' '))
+                self.listbox.insert(END, row, str(' '))
 
         def Update():
             Fee_Backend.delete(st[0])
-            Insert()
+            Add()
 
         def Exit():
             Exit = tkinter.messagebox.askyesno(
@@ -129,7 +129,7 @@ class Fee():
 
         # ==================================================Frames===================================================
         Main_Frame = Frame(self.root, bg='cadet blue')
-        Main_Frame.grid()
+        Main_Frame.grid(row=0, column=0, padx = 10, pady = 20)
 
         Title_Frame = LabelFrame(
             Main_Frame, width=1350, height=100, bg='cadet blue', relief='ridge', bd=15)
@@ -151,13 +151,13 @@ class Fee():
                              text='Fee Receipt', font=('arial', 15, 'bold'))
         Frame_2.pack(side=RIGHT, padx=10)
 
-        List_Frame = Frame(Main_Frame, width=1350, height=150,
+        Frame_3 = LabelFrame(Main_Frame, width=1350, height=150,
                            bg='cadet blue', relief='ridge', bd=15)
-        List_Frame.pack(side=TOP, padx=15)
+        Frame_3.pack(side=TOP, padx=15)
 
-        Button_Frame = Frame(Main_Frame, width=1350, height=80,
+        Frame_4 = LabelFrame(Main_Frame, width=1350, height=80,
                              bg='cadet blue', relief='ridge', bd=15)
-        Button_Frame.pack(side=TOP)
+        Frame_4.pack(side=BOTTOM)
 
         # ===================================================Labels================================================
         self.recpt_label = Label(Frame_1, text='Receipt No. : ', font=(
@@ -244,45 +244,45 @@ class Fee():
         self.Display.grid(row=0, column=0, padx=3)
 
         # =============================================List box and scrollbar===========================================
-        sb = Scrollbar(List_Frame)
+        sb = Scrollbar(Frame_3)
         sb.grid(row=0, column=1, sticky='ns')
 
-        self.list = Listbox(List_Frame, font=(
+        self.listbox = Listbox(Frame_3, font=(
             'arial', 13, 'bold'), width=140, height=8)
-        self.list.bind('<<ListboxSelect>>', Tuple)
-        self.list.grid(row=0, column=0)
-        sb.config(command=self.list.yview)
+        self.listbox.bind('<<ListboxSelect>>', Tuple)
+        self.listbox.grid(row=0, column=0)
+        sb.config(command=self.listbox.yview)
 
         # ==================================================Buttons=================================================
-        btnSave = Button(Button_Frame, text='SAVE', font=(
-            'arial', 14, 'bold'), width=10, command=Insert)
+        btnSave = Button(Frame_4, text='SAVE', font=(
+            'arial', 14, 'bold'), width=10, command=Add)
         btnSave.grid(row=0, column=0, padx=5, pady=5)
 
-        btnDisplay = Button(Button_Frame, text='DISPLAY', font=(
-            'arial', 14, 'bold'), width=10, command=View)
+        btnDisplay = Button(Frame_4, text='DISPLAY', font=(
+            'arial', 14, 'bold'), width=10, command=Display)
         btnDisplay.grid(row=0, column=1, padx=5, pady=5)
 
-        btnReset = Button(Button_Frame, text='RESET', font=(
+        btnReset = Button(Frame_4, text='RESET', font=(
             'arial', 14, 'bold'), width=10, command=Reset)
         btnReset.grid(row=0, column=2, padx=5, pady=5)
 
-        btnReset = Button(Button_Frame, text='UPDATE', font=(
+        btnReset = Button(Frame_4, text='UPDATE', font=(
             'arial', 14, 'bold'), width=10, command=Update)
         btnReset.grid(row=0, column=3, padx=5, pady=5)
 
-        btnSearch = Button(Button_Frame, text='SEARCH', font=(
+        btnSearch = Button(Frame_4, text='SEARCH', font=(
             'arial', 14, 'bold'), width=10, command=Search)
         btnSearch.grid(row=0, column=4, padx=5, pady=5)
 
-        btnDelete = Button(Button_Frame, text='DELETE', font=(
+        btnDelete = Button(Frame_4, text='DELETE', font=(
             'arial', 14, 'bold'), width=10, command=Delete)
         btnDelete.grid(row=0, column=5, padx=5, pady=5)
 
-        btnReceipt = Button(Button_Frame, text='RECEIPT', font=(
+        btnReceipt = Button(Frame_4, text='RECEIPT', font=(
             'arial', 14, 'bold'), width=10, command=Receipt)
         btnReceipt.grid(row=0, column=6, padx=5, pady=5)
 
-        btnExit = Button(Button_Frame, text='EXIT', font=(
+        btnExit = Button(Frame_4, text='EXIT', font=(
             'arial', 14, 'bold'), width=10, command=Exit)
         btnExit.grid(row=0, column=7, padx=5, pady=5)
 
