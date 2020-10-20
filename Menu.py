@@ -49,13 +49,13 @@ def menu():
 
 
        #========================================================LABELS===================================================================
-       Label_1 = Label(Frame_1, text = 'STUDENT PROFILE', font = ('arial',25,'bold'), bg = 'navajo white')
+       Label_1 = Label(Frame_1, text = 'STUDENT PROFILE', font = ('arial',25,'bold'), bg = 'cadet blue')
        Label_1.grid(row = 0, column = 0, padx = 50, pady = 5)
-       Label_2 = Label(Frame_2, text = 'FEE REPORT', font = ('arial',25,'bold'), bg = 'navajo white')
+       Label_2 = Label(Frame_2, text = 'FEE REPORT', font = ('arial',25,'bold'), bg = 'cadet blue')
        Label_2.grid(row = 0, column = 0, padx = 100, pady = 5)
-       Label_3 = Label(Frame_3, text = 'LIBRARY SYSTEM', font = ('arial',25,'bold'), bg = 'navajo white')
+       Label_3 = Label(Frame_3, text = 'LIBRARY SYSTEM', font = ('arial',25,'bold'), bg = 'cadet blue')
        Label_3.grid(row = 0, column = 0, padx = 60, pady = 5)
-       Label_4 = Label(Frame_4, text = 'MARKSHEET', font = ('arial',25,'bold'), bg = 'navajo white')
+       Label_4 = Label(Frame_4, text = 'MARKSHEET', font = ('arial',25,'bold'), bg = 'cadet blue')
        Label_4.grid(row = 0, column = 0, padx = 101, pady = 5)
        
 
