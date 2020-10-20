@@ -68,8 +68,8 @@ class Window_1:
             self.__menu__()
         else:
             tkinter.messagebox.askyesno("Login","Error : Wrong Password")
-            self.Username.set("")
-            self.Password.set("")
+            Username.set("")
+            Password.set("")
             #self.text_Username.focus()
 
         
