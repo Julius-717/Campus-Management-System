@@ -75,9 +75,9 @@ class Window_1:
         
         #======================================================Code for Reset Button==================================================================
     def Reset(self):
-         self.Username.set("")
-         self.Password.set("")
-         self.text_Username.focus()
+         Username.set("")
+         Password.set("")
+         text_Username.focus()
 
 
         #======================================================Code for Exit Button==================================================================
