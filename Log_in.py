@@ -23,7 +23,7 @@ class Window_1:
 
 
         Username = StringVar()                             # x = StringVar()  Holds a string; default value is " "
-        self.Password = StringVar()
+        Password = StringVar()
 
         self.Lbl_Title = Label(self.Frame, text = 'Login Menu', font = ('arial',55,'bold'), bg = 'lightskyblue', fg = 'Black')
         self.Lbl_Title.grid(row = 0, column = 0, columnspan =3, pady = 40)
