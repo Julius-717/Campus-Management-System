@@ -165,7 +165,7 @@ def marksheet():
        Entry_Name.grid(row = 0, column = 1, padx = 5, pady = 5)
 
        Label_Admission_no = Label(Frame_1, text = 'Admission Number', font = ('arial',15,'bold'), bg = 'cadet blue')
-       Label_admission_no.grid(row = 0, column = 3, padx = 80)
+       Label_Admission_no.grid(row = 0, column = 3, padx = 80)
        Entry_Admission_no = Entry(Frame_1, font = ('arial',15), width = 25, textvariable = admission)
        Entry_Admission_no.grid(row = 0, column = 4, padx = 40)
 
