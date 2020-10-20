@@ -127,27 +127,27 @@ class Std_info():
                      self.Frame_2.grid(row = 1, column = 1, padx = 5)                  
                      
                      self.Frame_3 = LabelFrame(self.master, width = 1200, height = 100, font = ('arial',10,'bold'), \
-                                               bg = 'cadet', relief = 'ridge', bd = 13)
+                                               bg = 'cadet blue', relief = 'ridge', bd = 13)
                      self.Frame_3.grid(row = 2, column = 0, pady = 10)
 
 
                      
                      #========================================================Labels of Frame_1========================================================
-                     self.Label_name = Label(self.Frame_1, text = 'Name', font = ('arial',20,'bold'),  bg = 'navajowhite')
+                     self.Label_name = Label(self.Frame_1, text = 'Name', font = ('arial',20,'bold'),  bg = 'cadet blue')
                      self.Label_name.grid(row = 0, column = 0, sticky = W, padx = 20, pady = 10)
-                     self.Label_fname = Label(self.Frame_1, text = 'Father Name', font = ('arial',20,'bold'),  bg = 'navajowhite')
+                     self.Label_fname = Label(self.Frame_1, text = 'Father Name', font = ('arial',20,'bold'),  bg = 'cadet blue')
                      self.Label_fname.grid(row = 1, column = 0, sticky = W, padx = 20)
-                     self.Label_mname = Label(self.Frame_1, text = 'Mother Name', font = ('arial',20,'bold'),  bg = 'navajowhite')
+                     self.Label_mname = Label(self.Frame_1, text = 'Mother Name', font = ('arial',20,'bold'),  bg = 'cadet blue')
                      self.Label_mname.grid(row = 2, column = 0, sticky = W, padx = 20)
-                     self.Label_address = Label(self.Frame_1, text = 'Address', font = ('arial',20,'bold'),  bg = 'navajowhite')
+                     self.Label_address = Label(self.Frame_1, text = 'Address', font = ('arial',20,'bold'),  bg = 'cadet blue')
                      self.Label_address.grid(row = 3, column = 0, sticky = W, padx = 20)
-                     self.Label_mobno = Label(self.Frame_1, text = 'Mobile Number', font = ('arial',20,'bold'),  bg = 'navajowhite')
+                     self.Label_mobno = Label(self.Frame_1, text = 'Mobile Number', font = ('arial',20,'bold'),  bg = 'cadet blue')
                      self.Label_mobno.grid(row = 4, column = 0, sticky = W, padx = 20)
-                     self.Label_emailID = Label(self.Frame_1, text = 'Email ID', font = ('arial',20,'bold'),  bg = 'navajowhite')
+                     self.Label_emailID = Label(self.Frame_1, text = 'Email ID', font = ('arial',20,'bold'),  bg = 'cadet blue')
                      self.Label_emailID.grid(row = 5, column = 0, sticky = W, padx = 20)
-                     self.Label_dob = Label(self.Frame_1, text = 'Date of Birth', font = ('arial',20,'bold'),  bg = 'navajowhite')
+                     self.Label_dob = Label(self.Frame_1, text = 'Date of Birth', font = ('arial',20,'bold'),  bg = 'cadet blue')
                      self.Label_dob.grid(row = 6, column = 0, sticky = W, padx = 20)
-                     self.Label_gender = Label(self.Frame_1, text = 'Gender', font = ('arial',20,'bold'),  bg = 'navajowhite')
+                     self.Label_gender = Label(self.Frame_1, text = 'Gender', font = ('arial',20,'bold'),  bg = 'cadet blue')
                      self.Label_gender.grid(row = 7, column = 0, sticky = W, padx = 20, pady = 10)
 
 
