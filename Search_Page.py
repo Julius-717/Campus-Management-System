@@ -10,7 +10,7 @@ class Window_1():
               self.master = master
               self.master.title('Search Page')
               self.master.geometry('1360x750')
-              self.master.config(bg = 'navajowhite')
+              self.master.config(bg = 'turquoise')
 
               self.roll = StringVar()
               frame = LabelFrame(self.master, width = 1000, height = 100, font = ('arial',30,'bold'), relief = 'ridge', bd = 15, bg = 'wheat')
