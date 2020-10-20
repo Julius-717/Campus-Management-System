@@ -11,7 +11,7 @@ class Library:
               self.root = root
               self.root.title('Library Management System')
               self.root.geometry('1350x750')
-              self.root.config(bg = 'navajowhite')
+              self.root.config(bg = 'cadet blue')
 
        #===================================================Variables===================================================
               self.Mtype = StringVar()
@@ -148,73 +148,73 @@ class Library:
                              
 
        #=====================================================Frames=====================================================
-              Main_Frame = Frame(self.root, bg = 'navajowhite')
+              Main_Frame = Frame(self.root, bg = 'cadet blue')
               Main_Frame.grid()
 
-              Title_Frame_1 = Frame(Main_Frame, width = 1350, bg = 'navajowhite', relief = RIDGE, bd = 15, padx = 20)
+              Title_Frame_1 = Frame(Main_Frame, width = 1350, bg = 'cadet blue', relief = RIDGE, bd = 15, padx = 20)
               Title_Frame_1.pack(side = TOP)
 
               self.lblTitle = Label(Title_Frame_1, font = ('arial',40,'bold'), text = '\tLibrary Management System\t', \
-                                    bg = 'navajowhite', padx = 13)
+                                    bg = 'cadet blue', padx = 13)
               self.lblTitle.grid()
 
-              Button_Frame = Frame(Main_Frame, width = 1350, height = 50, relief = RIDGE, bd = 10, bg = 'navajowhite')
+              Button_Frame = Frame(Main_Frame, width = 1350, height = 50, relief = RIDGE, bd = 10, bg = 'cadet blue')
               Button_Frame.pack(side = BOTTOM)
 
-              Detail_Frame = Frame(Main_Frame, width = 1350, height = 100, relief = RIDGE, bd = 10, bg = 'navajowhite')
+              Detail_Frame = Frame(Main_Frame, width = 1350, height = 100, relief = RIDGE, bd = 10, bg = 'cadet blue')
               Detail_Frame.pack(side = BOTTOM)
 
-              Data_Frame = Frame(Main_Frame, width = 1350, height = 400, relief = RIDGE, bd = 15, bg = 'navajowhite')
+              Data_Frame = Frame(Main_Frame, width = 1350, height = 400, relief = RIDGE, bd = 15, bg = 'cadet blue')
               Data_Frame.pack(side = BOTTOM)
 
-              Frame_1 = LabelFrame(Data_Frame, width = 800, height = 400, relief = RIDGE, bd = 10, bg = 'navajowhite', \
+              Frame_1 = LabelFrame(Data_Frame, width = 800, height = 400, relief = RIDGE, bd = 10, bg = 'cadet blue', \
                               text = "Library Membership Info:", padx = 20, font = ('arial',15,'bold'))
               Frame_1.pack(side = LEFT, padx = 3)
 
-              Frame_2 = LabelFrame(Data_Frame, width = 550, height = 400, relief = RIDGE, bd = 10, bg = 'navajowhite', \
+              Frame_2 = LabelFrame(Data_Frame, width = 550, height = 400, relief = RIDGE, bd = 10, bg = 'cadet blue', \
                               text = "Book Details:", padx = 20, font = ('arial',15,'bold'))
               Frame_2.pack(side = RIGHT)
 
 
        #================================================Labels========================================================
               self.Label_1 = Label(Frame_1, text = 'Member type', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = 'navajowhite' )
+                                   bg = 'cadet blue' )
               self.Label_1.grid(row = 0, column = 0, sticky = W)
               self.Label_2 = Label(Frame_1, text = 'Reference No.', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = 'navajowhite' )
+                                   bg = 'cadet blue' )
               self.Label_2.grid(row = 1, column = 0, sticky = W)
               self.Label_3 = Label(Frame_1, text = 'First Name', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = 'navajowhite' )
+                                   bg = 'cadet blue' )
               self.Label_3.grid(row = 2, column = 0, sticky = W)
               self.Label_4 = Label(Frame_1, text = 'Surname', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = 'navajowhite' )
+                                   bg = 'cadet blue' )
               self.Label_4.grid(row = 3, column = 0, sticky = W)
               self.Label_5 = Label(Frame_1, text = 'Address', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = 'navajowhite' )
+                                   bg = 'cadet blue' )
               self.Label_5.grid(row = 4, column = 0, sticky = W)
               self.Label_6 = Label(Frame_1, text = 'Post Code', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = 'navajowhite' )
+                                   bg = 'cadet blue' )
               self.Label_6.grid(row = 5, column = 0, sticky = W)
               self.Label_7 = Label(Frame_1, text = 'Mobile No.', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = 'navajowhite' )
+                                   bg = 'cadet blue' )
               self.Label_7.grid(row = 6, column = 0, sticky = W)
               self.Label_8 = Label(Frame_1, text = 'Book ID', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = 'navajowhite' )
+                                   bg = 'cadet blue' )
               self.Label_8.grid(row = 0, column = 2, sticky = W)
               self.Label_9 = Label(Frame_1, text = 'Book Title', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = 'navajowhite' )
+                                   bg = 'cadet blue' )
               self.Label_9.grid(row = 1, column = 2, sticky = W)
               self.Label_10 = Label(Frame_1, text = 'Author', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = 'navajowhite' )
+                                   bg = 'cadet blue' )
               self.Label_10.grid(row = 2, column = 2, sticky = W)
               self.Label_11 = Label(Frame_1, text = 'Date Borrowed', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = 'navajowhite' )
+                                   bg = 'cadet blue' )
               self.Label_11.grid(row = 3, column = 2, sticky = W)
               self.Label_13 = Label(Frame_1, text = 'Date Due', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = 'navajowhite' )
+                                   bg = 'cadet blue' )
               self.Label_13.grid(row = 4, column = 2, sticky = W)
               self.Label_13 = Label(Frame_1, text = 'Days in Loan', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = 'navajowhite' )
+                                   bg = 'cadet blue' )
               self.Label_13.grid(row = 5, column = 2, sticky = W)
               
 
