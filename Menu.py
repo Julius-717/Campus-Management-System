@@ -5,22 +5,19 @@ import os
 def __marksheet__():
        filename = 'Search_Page.py'
        os.system(filename)
-       os.system('notepad'+filename)
 
 def __Library__():
        filename = 'Library_Frontend.py'
        os.system(filename)
-       os.system('notepad'+filename)
 
 def __information__():
        filename = 'Std_info_FrontEnd.py'
        os.system(filename)
-       os.system('notepad'+filename)
 
 def __FeeReport__():
        filename = 'Fee_Frontend.py'
        os.system(filename)
-       os.system('notepad'+filename)
+       
        
        
 def menu():
