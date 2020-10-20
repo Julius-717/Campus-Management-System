@@ -128,7 +128,7 @@ class Fee():
                 return
 
         # ==================================================Frames===================================================
-        Main_Frame = Frame(self.master, bg='Navajo white')
+        Main_Frame = Frame(self.root, bg='Navajo white')
         Main_Frame.grid()
 
         Title_Frame = LabelFrame(
