@@ -115,7 +115,7 @@ class Std_info():
                      #============================================================Frames=====================================================================
 
                      self.Main_Frame = LabelFrame(self.master, width = 1300, height = 500, font = ('arial',20,'bold'), \
-                                                  bg = 'navajowhite',bd = 15, relief = 'ridge')
+                                                  bg = 'cadet blue',bd = 15, relief = 'ridge')
                      self.Main_Frame.grid(row = 0, column = 0, padx = 10, pady = 20)
 
                      self.Frame_1 = LabelFrame(self.Main_Frame, width = 600, height = 400, font = ('arial',15,'bold'), \
